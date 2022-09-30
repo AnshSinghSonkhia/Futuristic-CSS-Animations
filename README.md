@@ -40,3 +40,26 @@ A month-long celebration from October 1st to October 31st presented by [Digital 
 ## Rules :fire:
 To qualify for the __official limited edition Hacktoberfest shirt__, you must register [here](https://hacktoberfest.digitalocean.com/) and make four Pull Requests (PRs) between October 1-31, 2022 (in any time zone). PRs can be made to any public repo on GitHub, not only the ones with issues labeled Hacktoberfest. This year, the __first 40,000__ participants who complete the challenge will earn a T-shirt.
 
+![](https://i.imgur.com/waxVImv.png)
+
+
+
+
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=AnshSinghSonkhia/Futuristic-CSS-Animations"/>
+ </a>
+
+
+
+
+
+
+
+<div align="center">
+
+<h3> Show Some <img src="https://github.com/AnshSinghSonkhia/AnshSinghSonkhia/blob/main/icons/love.png" title="Love" alt="Love" width="20" height="20"/> by Starring Some of My Repos! </h3>
+
+</div>
