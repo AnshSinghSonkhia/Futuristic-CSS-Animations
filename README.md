@@ -53,6 +53,7 @@ To qualify for the __official limited edition Hacktoberfest shirt__, you must re
 > Don't Duplicate Any Animation Which is Already Present in this Repository.
 > There must be some big changes, if the type of animation is same.
 
+### 🧁 Enjoy Your HACKTOBERFEST 2022 Swags.. 👕
 
 
 ## Thanks to all contributors ❤
