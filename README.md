@@ -32,7 +32,7 @@ An Open Source Repository to Publish Your Futuristic CSS3 Animations.
 
 ### This repository is open to all members of the GitHub community. Any member can contribute to this project! :grin:
 
-## What is Hacktoberfest? :thinking:
+## :thinking: What is Hacktoberfest?
 A month-long celebration from October 1st to October 31st presented by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [DEV Community](https://dev.to/) collaborated with [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open-source developer community.
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
@@ -43,6 +43,14 @@ To qualify for the __official limited edition Hacktoberfest shirt__, you must re
 ![](https://i.imgur.com/waxVImv.png)
 
 
+## ✨ How To Contribute To This Repository?
+
+* Create a folder with the name of your CSS Animation.
+* Add Your Complete CSS Animation Project with all the files to that folder.
+* Raise a Pull Request mentioning what type of animation you have added
+> **Warning** <br>
+> Don't Duplicate Any Animation Which is Already Present in this Repository.
+> There must be some big changes, if the type of animation is same.
 
 
 
