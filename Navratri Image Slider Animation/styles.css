@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body{
+    font-family:'Outfit', sans-serif;
+    background-color:hsl(212, 45%, 89%);
+    min-height: 100vh;
+    display:inline;
+    align-items:center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.main-box{
+    max-width:360px;
+    margin:0 auto;
+    padding-top: 65px;
+}
+.card{
+    background-color:hsl(0, 0%, 100%);
+    padding:16px;
+    height: 620px;
+    border-radius: 17px;
+    text-align:center;
+}
+
+.card img{
+    width: 300px;
+    border-radius: 12px;    
+}
+
+.content{
+    padding:22px 10px;
+
+}
+
+.content h2{
+    color:hsl(218, 44%, 22%);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    color:hsl(220, 15%, 55%);
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper{
+    width:80%;
+    height:fit-content;
+
+}
+
+.swiper-slide .main-box{
+    width:80%;
+}
+
+.swiper .swiper-button-prev{
+    color: black;
+}
+.swiper .swiper-button-next{
+    color:black;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background : black;
+}

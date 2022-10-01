@@ -1,0 +1,51 @@
+/*Responsive Layout */
+@media (max-width: 500px) {
+    .card img {
+        width: 220px;
+    }
+    .content h2 {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 374px) {
+    .card img {
+        width: 159px;
+    }
+    .content h2 {
+        padding: 12px;
+        font-size: 17px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 287px) {
+    .card img {
+        width: 130px;
+    }
+    .content h2 {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 230px) {
+    .card img {
+        width: 65px;
+    }
+    .content h2 {
+        padding: 12px;
+        font-size: 8px;
+    }
+    .content p{
+        font-size: 8px;
+    }
+    .card {
+        height: 488px;
+    }
+}
