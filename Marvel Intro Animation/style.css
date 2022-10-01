@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  background-image: radial-gradient(#730801, #1f0100);
+  overflow: hidden;
+}
+
+.gif { 
+  background: url('https://37.media.tumblr.com/tumblr_mbha9qWF401qcixnko4_500.gif');
+  width: 100%;  
+  height: 100%;
+  position: absolute; 
+  top: 0; left: 0;
+  -webkit-animation: fadeOut 9s infinite;
+  animation: fadeOut 9s infinite;
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.8);
+  -webkit-animation: hideBg 9s ease 0s forwards;
+          animation: hideBg 9s ease 0s forwards;
+}
+
+@-webkit-keyframes hideBg {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideBg {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  font-size: 205vh;
+  -webkit-text-stroke: 2px #000;
+  opacity: 0;
+  -webkit-animation: marvel 6s ease 2s forwards;
+          animation: marvel 6s ease 2s forwards;
+}
+
+@-webkit-keyframes marvel {
+  0% {
+    opacity: 0;
+    font-size: 205vh;
+    color: rgba(255,255,255,0);
+    -webkit-text-stroke-color: #000;
+  }
+  20% {
+    opacity: 1;
+    color: rgba(255,255,255,0);
+    -webkit-text-stroke-color: #000;
+  }
+  60% {
+    color: rgba(255,255,255,0.5);
+    -webkit-text-stroke-color: #000;
+  }
+  100% {
+    opacity: 1;
+    font-size: 30vh;
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes marvel {
+  0% {
+    opacity: 0;
+    font-size: 205vh;
+    color: rgba(255,255,255,0);
+    -webkit-text-stroke-color: #000;
+  }
+  20% {
+    opacity: 1;
+    color: rgba(255,255,255,0);
+    -webkit-text-stroke-color: #000;
+  }
+  60% {
+    color: rgba(255,255,255,0.5);
+    -webkit-text-stroke-color: #000;
+  }
+  100% {
+    opacity: 1;
+    font-size: 30vh;
+    color: rgba(255,255,255,1);
+    -webkit-text-stroke-color: transparent;
+  }
+}
