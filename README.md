@@ -65,14 +65,33 @@ To qualify for the __official limited edition Hacktoberfest shirt__, you must re
 ![](https://go.kotisdesign.com/wp-content/uploads/2020/02/digital-ocean-map.jpg)
 
 
+## Thanks to all Contributors ✨
+
+Thanks Goes To These Wonderful People ❤ <!--([emoji key](https://allcontributors.org/docs/en/emoji-key)):-->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/AnshSinghSonkhia"><img src="https://avatars.githubusercontent.com/u/110414565?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ansh Singh Sonkhia</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/ishani-1255"><img src="https://avatars.githubusercontent.com/u/112965737?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ishika Ishani</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/Chayandev"><img src="https://avatars.githubusercontent.com/u/91884990?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CHAYANDEV BERA</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/Chaitanya1512"><img src="https://avatars.githubusercontent.com/u/56156988?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chaitanya1512</b></sub><br> :computer: </a></td>
+    </tr>
+  </tbody>
+</table>
 
 
+
+<!--
 ## Thanks to all contributors ❤
 
  <a href = "https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/graphs/contributors">
    <img src = "https://contrib.rocks/image?repo=AnshSinghSonkhia/Futuristic-CSS-Animations"/>
  </a>
-
+-->
 
 ![](https://i.imgur.com/waxVImv.png)
 
