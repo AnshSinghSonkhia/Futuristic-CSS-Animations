@@ -1,0 +1,48 @@
+body {
+  background: url("Images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  height: 100%;
+}
+
+marquee {
+  height: 100%;
+}
+
+.cardiv {
+  height: 100vh;
+  width: 200px;
+  position: relative;
+  left: 15%;
+}
+
+.mincar2, .mincar3 {
+  width: 100%;
+}
+
+.mincar {
+  width: 80%
+}
+
+.cardiv3 {
+  height: 100vh;
+  width: 200px;
+  position: relative;
+  left: 70%;
+  bottom: 200%;
+}
+
+.cardiv2 {
+  height: 100vh;
+  width: 200px;
+  position: relative;
+  left: 40%;
+  bottom: 100%;
+}
