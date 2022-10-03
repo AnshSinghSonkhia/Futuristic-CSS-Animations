@@ -79,6 +79,7 @@ Thanks Goes To These Wonderful People ❤ <!--([emoji key](https://allcontributo
       <td align="center"><a href="https://github.com/ishani-1255"><img src="https://avatars.githubusercontent.com/u/112965737?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ishika Ishani</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Sudhir878786"><img src="https://avatars.githubusercontent.com/u/92601949?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sudhir Sharma</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Chayandev"><img src="https://avatars.githubusercontent.com/u/91884990?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CHAYANDEV BERA</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/Farhan-2222"><img src="https://avatars.githubusercontent.com/u/87274221?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Md Farhan Sajid</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Chaitanya1512"><img src="https://avatars.githubusercontent.com/u/56156988?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chaitanya1512</b></sub><br> :computer: </a></td>
     </tr>
   </tbody>
