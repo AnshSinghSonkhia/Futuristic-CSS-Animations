@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    /*  */
+    
+    /* */
+}
+#header{
+    position: sticky;
+    top:0px;
+}
+.logo{
+    padding:10px 35px;
+    margin: 10px 10px;
+    font-family: 'Black Ops One', cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#094b65ec;
+    color: white;
+    
+
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    margin:10px 10px;
+
+
+}
+.navbar ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: 'Caveat Brush', cursive;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 3px 4px;
+    padding: 5px 15px;
+    color: white;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+    margin: 3px 4px;
+    padding: 2px 13px;
+    border:2px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #094B65;
+}
+section img{
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #094B65;
+    z-index: -1;
+    font-size: 2rem;
+    /* font-weight: 500; */
+}
+section::before{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height:100px;
+    background: linear-gradient(to top, #094B65, transparent);
+    z-index: 10;
+}
+#text{
+    position: relative;
+    top:0px;
+
+    transform:translateY(-50px);
+    
+    font-family: 'Caveat Brush', cursive;
+}
+#text2{
+    position: relative;
+    top:0px;
+    line-height: 0px;
+    font-size: 5rem;
+    font-family: 'Sedgwick Ave Display', cursive; 
+}
+#btn{
+    position: relative;
+    top:0px;
+    outline: none;
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    padding: 3px 20px;
+    margin: 2px 5px;
+    font-size: 1.5rem;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 20px;
+    transform:translateY(-10px);
+    cursor: pointer ;
+    z-index: 10000;
+
+    
+}
+
+.sec{
+    position: relative;
+    background-color: #094B65;
+    padding: 100px 150px;
+    max-height: 200vh;
+    font-family: 'Gentium Book Basic', serif; 
+    color: white;
+    font-size: 1.2rem;
+}
+div .head{
+    font-size: 4rem;
+}
+
+/* }
+.items{
+    list-style-type: none;
+} */
