@@ -1,0 +1,74 @@
+@import "compass/css3";
+ @import url(https://fonts.googleapis.com/css?family=Lato:300);
+ body {
+	 background-color: #555;
+	 color: #fff;
+	 font-family: lato, sans;
+	 font-weight: 300;
+	 font-size: 1em;
+	 text-align: center;
+}
+ .dominos {
+	 min-width: 40em;
+	 position: relative;
+	 padding-top: 8em;
+	 list-style: none;
+	 display: block;
+}
+ .dominos .domino {
+	 display: inline-block;
+	 list-style: none;
+	 transform: rotate(-90deg);
+	 width: 8em;
+	 height: 3em;
+	 margin-bottom: 0.25em;
+	 margin-left: -3.85em;
+	 color: #777;
+	 background-color: #444;
+	 line-height: 3em;
+	 text-transform: uppercase;
+	 text-align: center;
+	 animation: topple 1.5s ease-in 1 alternate;
+	 animation-fill-mode: forwards;
+	 position: relative;
+}
+ .dominos .domino:nth-child(1) {
+	 animation-delay: 0.75s;
+	 z-index: 5;
+}
+ .dominos .domino:nth-child(2) {
+	 animation-delay: 1.33s;
+	 z-index: 4;
+}
+ .dominos .domino:nth-child(3) {
+	 animation-delay: 1.9s;
+	 z-index: 3;
+}
+ .dominos .domino:nth-child(4) {
+	 animation-delay: 2.5s;
+	 z-index: 2;
+}
+ @keyframes topple {
+	 0% {
+		 background-color: #444;
+		 color: #777;
+	}
+	 4% {
+		 background-color: #eea;
+		 color: #432;
+		 transform: rotate(-90deg);
+		 box-shadow: 0 0 1em #fe2;
+	}
+	 42% {
+		 margin-left: 0.5em;
+		 margin-right: 0em;
+		 box-shadow: none;
+	}
+	 100% {
+		 transform: rotate(0deg);
+		 color: #333;
+		 background-color: white;
+		 margin: 0;
+		 margin-bottom: 0.25em;
+	}
+}
