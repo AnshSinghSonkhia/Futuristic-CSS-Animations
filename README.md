@@ -80,6 +80,13 @@ Thanks Goes To These Wonderful People ❤ <!--([emoji key](https://allcontributo
       <td align="center"><a href="https://github.com/Sudhir878786"><img src="https://avatars.githubusercontent.com/u/92601949?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sudhir Sharma</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Chayandev"><img src="https://avatars.githubusercontent.com/u/91884990?v=4?s=100" width="100px;" alt=""/><br /><sub><b>CHAYANDEV BERA</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Farhan-2222"><img src="https://avatars.githubusercontent.com/u/87274221?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Md Farhan Sajid</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/pman47"><img src="https://avatars.githubusercontent.com/u/72241422?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Manish Prajapati</b></sub><br> :computer: </a></td>
+    </tr>
+    <td align="center"><a href="https://github.com/anasilveira9787"><img src="https://avatars.githubusercontent.com/u/93779252?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ana Silveira</b></sub><br> :computer: </a></td>
+    <td align="center"><a href="https://github.com/DhruvGarg9136"><img src="https://avatars.githubusercontent.com/u/91418396?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dhruv Garg</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/SammiKanon"><img src="https://avatars.githubusercontent.com/u/115352825?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sammi Kanon</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/Yash-Hax"><img src="https://avatars.githubusercontent.com/u/75063323?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yash Hax</b></sub><br> :computer: </a></td>
+      <td align="center"><a href="https://github.com/monicacodes"><img src="https://avatars.githubusercontent.com/u/102931868?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Monica</b></sub><br> :computer: </a></td>
       <td align="center"><a href="https://github.com/Chaitanya1512"><img src="https://avatars.githubusercontent.com/u/56156988?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chaitanya1512</b></sub><br> :computer: </a></td>
     </tr>
   </tbody>
