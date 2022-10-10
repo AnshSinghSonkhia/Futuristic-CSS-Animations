@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Buttons</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #181818;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            box-shadow: 16px 14px 20px #0000008c;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div::before {
+            content: "";
+            background-image: conic-gradient(#ff0052 20deg, transparent 120deg);
+            width: 150%;
+            height: 150%;
+            position: absolute;
+            animation: rotate 2s linear infinite;
+        }
+        div::after {
+            content: "Animation";
+            width: 190px;
+            height: 190px;
+            background: #101010;
+            position: absolute;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ff0052;
+            font-size: larger;
+            letter-spacing: 5px;
+            box-shadow: inset 20px 20px 20px #0000008c;
+        }
+        @keyframes rotate {
+            0% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+        .btn {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background: #ff0052;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #ff0052;
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn:hover::before {
+            transform: scale(1);
+        }
+        .btn::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ff0052;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-primary:hover::after {
+            transform: scale(1);
+        }
+        .btn-secondary {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background: #fff;
+            color: #ff0052;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .btn-secondary:hover {
+            background: #ff0052;
+            color: #fff;
+        }
+        .btn-secondary::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ff0052;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-secondary:hover::before {
+            transform: scale(1);
+        }
+        .btn-secondary::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-secondary:hover::after {
+            transform: scale(1);
+        }
+        .btn-tertiary {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background: #ff0052;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .btn-tertiary:hover {
+            background: #fff;
+            color: #ff0052;
+        }
+        .btn-tertiary::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-tertiary:hover::before {
+            transform: scale(1);
+        }
+        .btn-tertiary::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ff0052;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-tertiary:hover::after {
+            transform: scale(1);
+        }
+        .btn-quaternary {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background: #fff;
+            color: #ff0052;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .btn-quaternary:hover {
+            background: #ff0052;
+            color: #fff;
+        }
+        .btn-quaternary::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #ff0052;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-quaternary:hover::before {
+            transform: scale(1);
+        }
+        .btn-quaternary::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .btn-quaternary:hover::after {
+            transform: scale(1);
+        }
+        .btn-quinary {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            background: #ff0052;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .btn-quinary:hover {
+            background: #fff;
+            color: #ff0052;
+        }
+        .btn-quinary::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: -1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Button</button>
+
+    </div>
+  </body>
+</html>
