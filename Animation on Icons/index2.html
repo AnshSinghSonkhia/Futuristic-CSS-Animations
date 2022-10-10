@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Animation on Icons</title>
+    <style>
+        body {
+            background: linear-gradient(-45deg, blue, red);
+        }
+        
+        .wrapper {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        
+        .text-area span {
+            display: inline-block;
+            margin: 0 15px;
+            border-radius: 10px;
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            text-align: center;
+            color: #262626;
+            opacity: 0;
+            transform: translate(0, -100px) rotate(360deg) scale(0.5);
+            animation: animate 5s forwards;
+            transition: all .6s ease;
+        }
+        
+        .text-area span i {
+            font-size: 40px;
+            line-height: 80px;
+        }
+        
+        .text-area span:hover {
+            background: #262626;
+        }
+        
+        .text-area span:hover i {
+            color: #fff;
+        }
+        
+        .text-area span:nth-of-type(2) {
+            animation-delay: .1s;
+        }
+        
+        .text-area span:nth-of-type(3) {
+            animation-delay: .2s;
+        }
+        
+        .text-area span:nth-of-type(4) {
+            animation-delay: .3s;
+        }
+        
+        .text-area span:nth-of-type(5) {
+            animation-delay: .4s;
+        }
+        
+        .text-area span:nth-of-type(6) {
+            animation-delay: .5s;
+        }
+        
+        @keyframes animate {
+            30% {
+                transform: translate(0, -50px) rotate(180deg) scale(1);
+            }
+            60% {
+                transform: translate(0, 20px) scale(.8) rotate(0deg);
+            }
+            100% {
+                transform: translate(0) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="text-area">
+            <span>a<i class="fa fa-youtube"></i></span>
+            <span>a<i class="fa fa-reddit"></i></span>
+            <span>a<i class="fa fa-behance"></i></span>
+            <span>a<i class="fa fa-pinterest"></i></span>
+            <span>a<i class="fa fa-tumblr"></i></span>
+            <span>a<i class="fa fa-facebook"></i></span>
+        </div>
+    </div>
+</body>
+
+</html>
