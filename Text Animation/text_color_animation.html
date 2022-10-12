@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">        
+        <style>
+            html, body {
+                height: 100%;
+                background-color: #F0F8FF;
+            }
+            
+            .text-color-animation {
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: color-slider 8s linear infinite;
+                background-size: 300% 100%;
+                background-image: linear-gradient(
+                    90deg,
+                    #e5600b 0,
+                    #bfaf00 14%,
+                    #37bb00 28%,
+                    #25b5f5 43%,
+                    #ca57fa 68%,
+                    #fa3f2b 83%,
+                    #e5600b
+                );
+                font-family: "Karla", sans-serif;
+                font-size: 5rem;
+                line-height: 2.25rem;
+                font-weight: 800;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+
+            @keyframes color-slider {
+                0% {
+                    background-position: 0 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                to {
+                    background-position: 0 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text-color-animation">
+            Hacktoberfest 2022
+        </div>
+    </body>
+</html>
