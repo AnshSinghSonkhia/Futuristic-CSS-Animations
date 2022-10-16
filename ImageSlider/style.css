@@ -1,0 +1,170 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:'Raleway',sans-serif;
+}
+body{
+  height:100%;
+  width:100%;
+  background:#444;
+}
+.main{
+  position:relative;
+  height:100vh;
+  width:100%;
+  color:#fff;
+}
+.main .slider{
+  position:relative;
+  height:100vh;
+  width:100%;
+}
+.main .slider .slides{
+  position:absolute;
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  opacity:0;
+  transition:0.3s ease-in-out;
+}
+.main .slider .slides.current{
+  z-index:1;
+  opacity:1;
+}
+.main .slider .slides:nth-child(1){
+  background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.main .slider .slides:nth-child(2){
+  background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('https://images.pexels.com/photos/2303337/pexels-photo-2303337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.main .slider .slides:nth-child(3){
+  background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('https://images.pexels.com/photos/2346091/pexels-photo-2346091.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.main .slider .slides:nth-child(4){
+  background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('https://images.pexels.com/photos/1168764/pexels-photo-1168764.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.main .slider .slides:nth-child(5){
+  background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('https://images.pexels.com/photos/2693529/pexels-photo-2693529.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.main .slider .slides h1{
+  font-size:3em;
+  font-weight:600;
+  text-shadow:0px 0.5px 12px rgba(0, 0, 0, 0.9);
+  margin-left:-500%;
+  transition:0.3s linear;
+}
+.main .slider .slides.current h1{
+  animation:animateHeading 0.3s linear forwards 1;
+  animation-delay:0.2s;
+}
+@keyframes animateHeading{
+  to{
+    margin-left:0;
+  }
+}
+.main .slider .slides p{
+  text-shadow:0px 0.5px 5px rgba(0, 0, 0, 0.5);
+  margin-right:-500%;
+  transition:0.3s linear;
+}
+.main .slider .slides.current p{
+  animation:animateparagraph 0.3s linear forwards 1;
+  animation-delay:0.2s;
+}
+@keyframes animateparagraph{
+  to{
+    margin-right:0;
+  }
+}
+.main .prev{
+  position:fixed;
+  color:#fff;
+  top:50%;
+  left:5%;
+  transform:translateY(-50%);
+  z-index:99;
+  font-size:1.5em;
+  font-weight:600;
+  border:2px solid #fff;
+  padding:10px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  transition:0.2s ease-in-out;
+  cursor:pointer;
+  box-shadow:0px 2px 15px rgba(0, 0, 0, 0.9);
+}
+.main .next{
+  position:fixed;
+  color:#fff;
+  top:50%;
+  right:5%;
+  transform:translateY(-50%);
+  z-index:99;
+  font-size:1.5em;
+  font-weight:600;
+  border:2px solid #fff;
+  padding:10px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  transition:0.2s ease-in-out;
+  cursor:pointer;
+  box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.main .prev:hover,
+.main .next:hover{
+  background:#16a085;
+  border-color:#16a085;
+}
+.main a{
+  position:fixed;
+  color:#fff;
+  bottom:15%;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:99;
+  font-size:1em;
+  font-weight:500;
+  border:1px solid #16a;
+  padding:10px 17px;
+  line-height:1.2em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:2px;
+  transition:0.2s ease-in-out;
+  cursor:pointer;
+  text-decoration:none;
+  background:#16a;
+  box-shadow:0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.main a:hover{
+  background:#017fb5;
+}
