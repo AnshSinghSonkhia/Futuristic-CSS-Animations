@@ -1,0 +1,22 @@
+body{  
+    background-color: rgb(10, 78, 78);
+    background-size: cover;
+}
+
+.a{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.b{
+    height: 300px;
+    margin-top: 200px;
+}
+
+.b:hover{
+    transform: rotate(360deg);
+    transition-duration: 2.5s;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
