@@ -1,0 +1,31 @@
+
+.a1{
+    display:inline;
+    padding: 20px;
+}
+
+img{
+    height: 70px;
+    margin-right: 100px;
+}
+
+img:nth-child(even) {
+    animation-name: example1;
+    animation-duration: 0.5s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+img:nth-child(odd) {
+    animation-name: example12;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example1{
+    100% {transform: translateY(600px);}
+  }
+@keyframes example12{
+    100% {transform: translateY(500px);}
+  }
