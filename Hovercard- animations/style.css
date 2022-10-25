@@ -1,0 +1,1208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@1,900&display=swap');
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body gradient background */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* page title stylings */
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-90deg,
+            #231557 0%,
+            #44107a 20%,
+            #ff1361 50%,
+            #fff800 80%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-family: 'Bungee', cursive;
+    font-size: 3.5em;
+    transition: transform .5s;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* hover animation on title */
+.animate-charcter:hover {
+    cursor: pointer;
+    /* text-shadow: 0 0 0px #231557,
+                0 0 15px #03e9f4,
+                0 0 40px #03e9f4,
+                0 0 80px #03e9f4; */
+    transform: scale(1.25);
+}
+
+/* ---grid stylings for all grids--- */
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* ---Common styles to all grid cards--- */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+ 
+/* grid image stylings */
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+/* grid caption stylings */
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 70%;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+/* Individual cards stylings */
+
+/* card1 */
+/* figcaption position */
+figure.card1 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+}
+
+/* card 1 image stylings */
+figure.card1 img {
+    max-width: none;
+    width: -webkit-calc(100% + 50px);
+    width: calc(100% + 50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+}
+
+figure.card1 figcaption {
+    text-align: left;
+}
+
+figure.card1 figcaption>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5em;
+    width: 100%;
+    height: 50%;
+}
+
+/* translation of image caption */
+figure.card1 h2,
+figure.card1 p {
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+
+figure.card1 h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.card1 p {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+}
+
+/* hovering effect on image and text */
+figure.card1:hover img,
+figure.card1:hover p {
+    opacity: 1;
+}
+
+/* translation effect on image and texts */
+figure.card1:hover img,
+figure.card1:hover h2,
+figure.card1:hover p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* slide-in paragraph when hover */
+figure.card1:hover p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+}
+
+/* card2 */
+/* figcaption position */
+figure.card2 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84%;
+    height: 77%;
+}
+
+/* card 2 image stylings */
+figure.card2 img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 103%;
+    opacity: 0.8;
+}
+
+/* styling of figcaption before hovering */
+figure.card2 figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+}
+
+/* heading styling of card 2 */
+figure.card2 h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+/* styling of texts before hovering */
+figure.card2 figcaption::before,
+figure.card2 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+/* styling of texts */
+figure.card2 p {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    padding-bottom: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+/* styling of heading on hover */
+figure.card2:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+}
+
+/* styling of texts on hover */
+figure.card2:hover figcaption::before,
+figure.card2:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* card3 */
+/* figcaption position */
+figure.card3 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 68%;
+}
+
+figure.card3 {
+    background: #18a367;
+}
+
+/* image position */
+figure.card3 img {
+    height: 390px;
+}
+
+figure.card3 figcaption {
+    padding: 3em;
+}
+
+/* fig caption styling before and after hover */
+figure.card3 figcaption::before,
+figure.card3 figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+/* figcaption styling before hover */
+figure.card3 figcaption::before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+/* figcaption styling after hover */
+figure.card3 figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+
+/* transition effect on heading */
+figure.card3 h2 {
+    padding-top: 15%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+/* transition effect on paragraph */
+figure.card3 p {
+    padding: 0.5em 1em;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+/* transition effect on image and heading */
+figure.card3 img,
+figure.card3 h2 {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+}
+
+/* transition effect on image, and texts */
+figure.card3 img,
+figure.card3 figcaption::before,
+figure.card3 figcaption::after,
+figure.card3 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+/* opacity of image on hover */
+figure.card3:hover img {
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* figcaption hovering effect on before and after */
+figure.card3:hover figcaption::before,
+figure.card3:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* translation on heading and texts on hover */
+figure.card3:hover h2,
+figure.card3:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* hover after effects on figcaption and image */
+figure.card3:hover figcaption::after,
+figure.card3:hover h2,
+figure.card3:hover p,
+figure.card3:hover img {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+/* card4 */
+/* figcaption position */
+figure.card4 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 67%;
+}
+
+/* image position */
+figure.card4 img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 113%;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+/* gradient background color */
+figure.card4 {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+
+/* transition property on figcaption */
+figure.card4 figcaption {
+    padding: 3em;
+    background-color: rgba(58, 52, 42, 0.7);
+    -webkit-transition: background-color 0.35s;
+    transition: background-color 0.35s;
+}
+
+/* before positioning of figcaption */
+figure.card4 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
+}
+
+/* transition property on heading */
+figure.card4 h2 {
+    margin: 15% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+/* transition property on figcaption and texts */
+figure.card4 figcaption::before,
+figure.card4 p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+/* hover transition on heading */
+figure.card4:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* scaling property on figcaptionand texts */
+figure.card4:hover figcaption::before,
+figure.card4:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* figcaption background color on hover */
+figure.card4:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+figure.card4:hover img {
+    opacity: 0.4;
+}
+
+/* card5 */
+/* figcaption position */
+figure.card5 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82%;
+    height: 75%;
+}
+
+figure.card5 {
+    background: #9e5406;
+}
+
+/* image stylings */
+figure.card5 img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.card5:hover img {
+    opacity: 0.4;
+}
+
+/* before and after figcaption stylings */
+figure.card5 figcaption::before,
+figure.card5 figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.card5 figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+figure.card5 figcaption::after {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+/* transition of heading */
+figure.card5 h2 {
+    padding-top: 15%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+}
+
+/* transition of texts */
+figure.card5 p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+/* before and after figcaption stylings on hover*/
+figure.card5:hover figcaption::before,
+figure.card5:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* before and after heading and texts stylings on hover*/
+figure.card5:hover h2,
+figure.card5:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* card6 */
+/* figcaption position */
+figure.card6 figcaption {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 75%;
+    height: 75%;
+}
+
+/* image stylings */
+figure.card6 img {
+    max-width: 101%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4, 1.4, 1);
+    transform: scale3d(1.4, 1.4, 1);
+}
+
+/* image stylings on hover */
+figure.card6:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: translate3d(1, 1, 1);
+}
+/* before and after figcaption stylings */
+figure.card6 figcaption::before,
+figure.card6 figcaption::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+figure.card6:hover figcaption::before {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(45deg);
+    transform: translate3d(-50%, -50%, 0) rotate(45deg);
+}
+
+figure.card6:hover figcaption::after {
+    opacity: 0.5;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+}
+
+figure.card6 h2,
+figure.card6 p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.card6 h2 {
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, -150%, 0);
+}
+
+figure.card6 p {
+    padding: 0;
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, 150%, 0);
+}
+
+figure.card6:hover h2 {
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, -100%, 0);
+}
+
+figure.card6:hover p {
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, 100%, 0);
+}
+
+/* card7 */
+/* figcaption position */
+figure.card7 figcaption {
+    position: absolute;
+    top: 0;
+    left: -17px;
+    width: 100%;
+    height: 100%;
+}
+
+figure.card7 {
+    background: #2f3238;
+}
+
+/* image stylings */
+figure.card7 img {
+    max-width: 103.5%;
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.card7 figcaption {
+    text-align: left;
+}
+
+figure.card7 h2 {
+    position: relative;
+    padding: 0.5em 0;
+}
+
+figure.card7 p {
+    display: inline-block;
+    margin: 0 0 0.25em;
+    padding: 0.4em 1em;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2f3238;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 75%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-360px, 0, 0);
+    transform: translate3d(-360px, 0, 0);
+}
+
+figure.card7 p:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+figure.card7 p:nth-of-type(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+figure.card7 p:nth-of-type(3) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+figure.card7:hover p:first-child {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+figure.card7:hover p:nth-of-type(2) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+figure.card7:hover p:nth-of-type(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/* image stylings on hover */
+figure.card7:hover img {
+    opacity: 0.4;
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+figure.card7:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* card8 */
+/* figcaption position */
+figure.card8 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 75%;
+}
+
+/* image stylings */
+figure.card8 img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 128%;
+    opacity: 0.8;
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px, 10px, 0);
+    transform: translate3d(10px, 10px, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.card8 {
+    background: -webkit-linear-gradient(-45deg, #000 0%, #fff 100%);
+    background: linear-gradient(-45deg, #000 0%, #fff 100%);
+}
+
+/* before figcaption and texts stylings */
+figure.card8 figcaption::before,
+figure.card8 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+/* before figcaption stylings */
+figure.card8 figcaption::before {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+/* image stylings on hover */
+figure.card8:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.card8 h2 {
+    text-align: left;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(5px, 5px, 0);
+    transform: translate3d(5px, 5px, 0);
+}
+
+figure.card8 p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5em 1.5em 0;
+    width: 140px;
+    text-align: right;
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 20px, 0);
+    transform: translate3d(20px, 20px, 0);
+}
+
+/* before figcaption stylings on hover */
+figure.card8:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+/* translation hover effect on heading and texts */
+figure.card8:hover h2,
+figure.card8:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* card9 */
+/* figcaption position */
+figure.card9 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 84%;
+    height: 75%;
+}
+
+figure.card9 {
+    background: #030c17;
+}
+
+/* image stylings */
+figure.card9 img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+/* before figcaption stylings */
+figure.card9 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.4, 1.4, 1);
+    transform: scale3d(1.4, 1.4, 1);
+}
+
+figure.card9 h2 {
+    margin: 20% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.card9 p {
+    padding: 1em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+figure.card9:hover h2 {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* before figcaption and paragraph stylings */
+figure.card9:hover figcaption::before,
+figure.card9:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+/* hover effect on figcaption stylings */
+figure.card9:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+/* image opacity on hover */
+figure.card9:hover img {
+    opacity: 0.4;
+}
+
+/* card10 */
+/* figcaption position */
+figure.card10 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 70%;
+}
+
+/* gradient effect on card */
+figure.card10 {
+    background: -webkit-linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
+    background: linear-gradient(-45deg, #f3cf3f 0%, #f33f58 100%);
+}
+
+/* image stylings */
+figure.card10 img {
+    opacity: 0.9;
+    max-width: 100.5%;
+}
+
+/* after figcaption, image and texts stylings */
+figure.card10 figcaption::after,
+figure.card10 img,
+figure.card10 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+/* after figcaption stylings */
+figure.card10 figcaption::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+/* scaling of heading and texts */
+figure.card10 h2,
+figure.card10 p {
+    opacity: 1;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+}
+
+/* transition on texts */
+figure.card10 h2 {
+    padding-top: 16%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.card10 p {
+    padding: 0.5em 2.5em;
+    text-transform: none;
+    font-size: 0.85em;
+    opacity: 0;
+}
+
+/* image stylings on hover */
+figure.card10:hover img {
+    opacity: 0.7;
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+/* after figcaption hover effect */
+figure.card10:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+}
+
+/* hovering effect on heading and texts */
+figure.card10:hover h2,
+figure.card10:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+
+/* card11 */
+/* figcaption position */
+figure.card11 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83%;
+    height: 75%;
+}
+
+figure.card11 {
+    background: #3498db;
+}
+
+/* image stylings */
+figure.card11 img {
+    opacity: 0.95;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+/* before figcaption stylings */
+figure.card11 figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: rgba(255, 255, 255, 0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+/* texts positioning */
+figure.card11 p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3em;
+    padding: 0 1em;
+    max-width: 150px;
+    border-right: 4px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.card11 h2 {
+    text-align: left;
+}
+
+/* image stylings on hover*/
+figure.card11:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+/* before figcaption stylings on hover */
+figure.card11:hover figcaption::before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+/* text transition on hover */
+figure.card11:hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/* card12 */
+/* figcaption position */
+figure.card12 figcaption {
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 75%;
+    height: 70%;
+}
+
+/* gradient effect on card */
+figure.card12 {
+    background: -webkit-linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
+    background: linear-gradient(-45deg, #34495e 0%, #cc6055 100%);
+}
+
+/* image and texts stylings */
+figure.card12 img,
+figure.card12 p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+/* image stylings on hover*/
+figure.card12:hover img {
+    opacity: 0.1;
+    -webkit-transform: scale3d(2, 2, 1);
+    transform: scale3d(2, 2, 1);
+}
+
+/* heading transition */
+figure.card12 h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+/* texts transition and positioning */
+figure.card12 p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid #fff;
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+}
+
+/* hovering effect on heading and texts */
+figure.card12:hover h2,
+figure.card12:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+
+/* media screen */
+@media screen and (max-width: 50em) {
+    .grid figure {
+        display: inline-block;
+        float: none;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
