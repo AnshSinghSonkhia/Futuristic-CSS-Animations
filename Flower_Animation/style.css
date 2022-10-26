@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css?family=Almendra+SC');
+
+body {
+
+    margin:0;
+
+    padding:0;
+
+    background:yellow;
+
+}
+
+.container{
+
+    top:30%;    
+
+}
+
+ul{
+
+    padding:0;
+
+    margin:0;
+
+    position:absolute;
+
+    left:32%;
+
+    top:27%;
+
+}
+
+ ul li{
+
+    width:130px;
+
+    height:130px;
+
+    list-style:none;
+
+    position:absolute;
+
+     border-radius:0% 100% 0% 100% / 0% 100% 0% 100%;;
+
+    box-shadow:0 0 5px rgba(0,0,0,.5);
+
+    transform-origin: bottom center;
+
+    animation: anim 10s linear infinite;
+
+}
+
+@keyframes anim {
+
+    0%{
+
+        transform:rotate(0deg);
+
+    }
+
+    100%{
+
+    
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+ul li:nth-child(1)
+
+{
+
+    animation-delay:0s;
+
+    background:powderBlue;
+
+}
+
+ul li:nth-child(2)
+
+{
+
+    animation-delay:1s;
+
+    background:wheat;
+
+}
+
+ul li:nth-child(3)
+
+{
+
+    animation-delay:2s;
+
+    background:#FF69B4;
+
+}
+
+ul li:nth-child(4)
+
+{
+
+    animation-delay:3s;
+
+    background:crimson;    
+
+}
+
+ul li:nth-child(5)
+
+{
+
+    animation-delay:4s;
+
+    background:#F0E68C;
+
+}
+
+ul li:nth-child(6)
+
+{
+
+    animation-delay:5s;
+
+    background:cyan;
+
+}
+
+ul li:nth-child(7)
+
+{
+
+    animation-delay:6s;
+
+    background:#FA8072;
+
+}
+
+      ul li:nth-child(8)
+
+{
+
+    animation-delay:7s;
+
+    background:#BA55D3;
+
+}
+
+ ul li:nth-child(9)
+
+{
+
+    animation-delay:8s;
+
+    background:#ADFF2F;
+
+}
+
+ ul li:nth-child(10)
+
+{
+
+    animation-delay:9s;
+
+    background:yellow;
+
+}
+
+ ul li:nth-child(11)
+
+{
+
+    animation-delay:9s;
+
+    background:gold;
+
+}
+
+ ul li:nth-child(12)
+
+{
+
+    animation-delay:9.5s;
+
+    background:#C71585;
+
+}
+
+section {
+
+  margin-top:5%;
+
+  width:92%;
+
+    margin-left:5%;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-family:consolas;
+
+    box-sizing:border-box;
+
+    padding:3px;
+
+    height:400px;
+
+    overflow-y:auto;
+
+    box-shadow:0 0 30px white ;
+
+    background-color: #000088;
+
+}  
+
+   h1{
+
+    background-color: #000080;
+
+    box-shadow:0 0 40px white;
+
+    width:100%;
+
+    border-radius:5px;  
+
+    color: white;
+
+    height:40px;
+
+    font-size:26px;
+
+    font-family: Almendra SC;
+
+} 
