@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen Effect | Square</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #000;
+        }
+
+        .square {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #fff;
+            box-shadow: 0px 0px 5px #fff;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .square:nth-child(1) {
+            height: 50px;
+            width: 50px;
+            animation: animate 5s infinite ease-in-out;
+        }
+
+        .square:nth-child(2) {
+            height: 70px;
+            width: 70px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .1s;
+            opacity: .9;
+        }
+
+        .square:nth-child(3) {
+            height: 90px;
+            width: 90px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .2s;
+            opacity: .8;
+        }
+
+        .square:nth-child(4) {
+            height: 110px;
+            width: 110px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .3s;
+            opacity: .7;
+        }
+
+        .square:nth-child(5) {
+            height: 130px;
+            width: 130px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .4s;
+            opacity: .6;
+        }
+
+        .square:nth-child(6) {
+            height: 150px;
+            width: 150px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .5s;
+            opacity: .5;
+        }
+
+        .square:nth-child(7) {
+            height: 170px;
+            width: 170px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .6s;
+            opacity: .4;
+        }
+
+        .square:nth-child(8) {
+            height: 190px;
+            width: 190px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .7s;
+            opacity: .3;
+        }
+
+        .square:nth-child(9) {
+            height: 210px;
+            width: 210px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .8s;
+            opacity: .2;
+        }
+
+        .square:nth-child(10) {
+            height: 230px;
+            width: 230px;
+            animation: animate 5s infinite ease-in-out;
+            animation-delay: .9s;
+            opacity: .1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+    </div>
+
+</body>
+
+</html>
