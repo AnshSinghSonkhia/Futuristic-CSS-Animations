@@ -1,4 +1,4 @@
-# Futuristic CSS Animations &nbsp; x &nbsp; Hacktoberfest 2022
+# Futuristic CSS Animations &nbsp; x &nbsp; Hacktoberfest 2023
 An Open Source Repository to Publish Your Futuristic CSS3 Animations & Win Your Hacktoberfest 2022 Swags.
 
 ![image](https://user-images.githubusercontent.com/70385488/192114009-0830321a-d227-4a4d-8411-6c03b54d7ce6.png)
@@ -10,7 +10,7 @@ An Open Source Repository to Publish Your Futuristic CSS3 Animations & Win Your 
 
 <a href="https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/AnshSinghSonkhia/Futuristic-CSS-Animations?style=flat" alt="licence"/></a>
 ![](https://img.shields.io/badge/-Good_First_Issue-blue?style=flat&logo=&logoColor=black)&nbsp;
-<img src="https://img.shields.io/badge/Hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
+<img src="https://img.shields.io/badge/Hacktoberfest-2023-blueviolet" alt="Hacktober Badge"/>
 <a href="https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/fork" target="blank"><img src="https://img.shields.io/github/forks/AnshSinghSonkhia/Futuristic-CSS-Animations?style=flat" alt="forks"/></a>
 <a href="https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/stargazers" target="blank"><img src="https://img.shields.io/github/stars/AnshSinghSonkhia/Futuristic-CSS-Animations?style=flat" alt="stars"/></a>
 <a href="https://github.com/AnshSinghSonkhia/Futuristic-CSS-Animations/issues?q=is%3Aissue+" target="blank"><img src="https://img.shields.io/github/issues/AnshSinghSonkhia/Futuristic-CSS-Animations?style=flat-square" alt="opensourceEvents issues"/></a>
