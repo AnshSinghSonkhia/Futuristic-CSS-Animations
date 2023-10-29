@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  /* font-family: "Rubik Iso", cursive; */
+  min-height: 100vh;
+  /* height: 100%; */
+  background-image: url(images/159Z_2107.w026.n002.628B.p1.628.jpg);
+  background-size: cover;
+  /* background-color: black; */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.error h1 {
+  font-size: clamp(80px, 20vw, 180px);
+  font-weight: 900;
+  letter-spacing: 20px;
+}
+.error h2 {
+  /* font-size: clamp(20px, 20vw, 60px); */
+  font-weight: bold;
+}
+.error p {
+  font-weight: bold;
+}
+.error a {
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: #3fb5ff;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: inline-block;
+  margin-top: 20px;
+}
+.error a:hover {
+  box-shadow: grey;
+  background-color: #ff3f6c97;
+}
+.container .error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.element img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+.element img:nth-child(1) {
+  top: 53%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.element img:nth-child(2) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.element img:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.element img:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.element img:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.element img:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.element img:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.element img:nth-child(8) {
+  top: 32%;
+  left: 15%;
+  animation: animate 16s linear infinite;
+}
+.element img:nth-child(9) {
+  top: 80%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.element img:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(180deg);
+    opacity: 0;
+  }
+}
