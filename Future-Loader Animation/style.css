@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+body{
+    background-color:#000;
+    }
+    .circle{
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto;
+    }
+
+    .one{
+        border:120px solid #000;
+border-color:#202060 transparent #202060 transparent;
+width:70px;
+height:70px;
+border-radius:50%;
+animation:anim 10s 0s linear infinite;
+    }
+
+    .two{
+        border:10px solid #b030b0;
+width:200px;
+height:200px;
+border-radius:50%;
+animation:anim 7s 0s linear infinite;
+    }
+
+    .three{
+        border:30px solid #000;
+        border-color:transparent #b030b0  transparent transparent;
+        width:160px;
+        height:160px;
+        border-radius:50%;
+        animation:anim 4s 0s linear infinite; 
+    }
+
+    .four{
+        border:30px solid #000;
+        border-color: transparent transparent transparent #b030b0;
+        width:110px;
+        height:110px;
+        border-radius:50%;
+        animation:anim 4s 0s linear infinite; 
+    }
+
+    .five{
+       
+            border:5px solid #000;
+            border-color:transparent #5bc8af transparent  #5bc8af;
+            width:240px;
+            height:240px;
+            border-radius:50%;
+            animation:anim 2s 0s linear infinite; 
+    }
+
+    .six{
+        border:5px dashed #000;
+            border-color:transparent #fff transparent  #fff;
+            width:280px;
+            height:2px;
+            animation:anim 10s 0s linear infinite; 
+    }
+
+    .seven{
+        color: #fff;
+        width:90px;
+            height:20px;
+            font-size: 20px;
+            font-family: 'Fasthand', cursive;
+            text-align: center;
+            animation:text 2s 0s linear infinite;
+    }
+
+    @keyframes text {
+        0%{
+            text-decoration: underline;
+        }
+        25%{
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        50%{
+            font-style: italic;
+            text-decoration: overline;
+        }
+        75%{
+            text-decoration: line-through;
+        }
+        100%{
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
+
+
+
+
+    @keyframes anim{
+        0%{
+        transform:rotate(0deg)
+        }100%{
+        transform:rotate(360deg)
+        }
+        }
