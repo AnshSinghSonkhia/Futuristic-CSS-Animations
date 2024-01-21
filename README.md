@@ -22,6 +22,10 @@ An Open Source Repository to Publish Your Futuristic CSS3 Animations & Win Your 
 
 ![](https://i.imgur.com/waxVImv.png)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=AnshSinghSonkhia/Futuristic-CSS-Animations&type=Date)](https://star-history.com/#AnshSinghSonkhia/Futuristic-CSS-Animations&Date)
+
 
 
 ### This repository aims to help code beginners with their first successful pull request and open source contribution. :partying_face:
